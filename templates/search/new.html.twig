@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}L'annuaire du CHIC{% endblock %}
+
+{% block body %}
+    <h1>L'annuaire du CHIC</h1>
+
+    {{ include('search/_form.html.twig') }}
+
+    <a href="{{ path('app_search_index') }}">back to list</a>
+{% endblock %}
