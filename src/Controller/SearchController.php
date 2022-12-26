@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/')]
 class SearchController extends AbstractController
 {
-    #[Route('/', name: 'app_search_index', methods: ['GET'])]
+    #[Route('/', name: 'app_search_index', methods: ['POST', 'GET'])]
     public function index(Request $request, SearchRepository $searchRepository): Response
     {
         $search = new Search();

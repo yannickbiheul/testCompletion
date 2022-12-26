@@ -1,4 +1,37 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    <div class="row formulaire">
+        {{ form_widget(form.personne) }}
+    <button class="btn btn-primary">{{ button_label|default('Rechercher') }}</button>
+    </div>
+    
 {{ form_end(form) }}
+
+<style>
+#search_personne {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 60%;
+    height: 36px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.formulaire > button {
+    width: 15%;
+    height: 36px;
+}
+
+.formulaire > select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 60%;
+    height: 36px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+</style>

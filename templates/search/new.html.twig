@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}L'annuaire du CHIC{% endblock %}
+{% block title %}Un Annuaire{% endblock %}
 
 {% block body %}
-    <h1>L'annuaire du CHIC</h1>
-
-    {{ include('search/_form.html.twig') }}
-
-    <a href="{{ path('app_search_index') }}">back to list</a>
+    <h1>Un Annuaire</h1>
+    <div class="row">
+        {{ include('search/_form.html.twig') }}
+    </div>
+    
 {% endblock %}
